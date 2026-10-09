@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-08T22:19:04-03:00",
+  "title": "Design System: Amada Cosméticos",
+  "extensions": {
+    "colorMeta": {
+      "plum": { "role": "primary", "displayName": "Ameixa de base", "canonical": "#37112f", "tonalRamp": ["#1d0919", "#37112f", "#54204a", "#733065", "#955083", "#b879a6", "#dcb0ce", "#f7e7f3"] },
+      "plum-deep": { "role": "primary", "displayName": "Ameixa profunda", "canonical": "#22091d", "tonalRamp": ["#150511", "#22091d", "#3d1835", "#5b2b50", "#7d496f", "#a17692", "#cbb0c5", "#f4e8f1"] },
+      "paper": { "role": "neutral", "displayName": "Papel rosado", "canonical": "#f7dfe4", "tonalRamp": ["#2c2023", "#503b40", "#775d63", "#9d8187", "#c1a8ad", "#dfc8cd", "#f7dfe4", "#fff5f7"] },
+      "paper-light": { "role": "neutral", "displayName": "Papel claro", "canonical": "#fff3fb", "tonalRamp": ["#2b2429", "#51464d", "#786b74", "#a0949c", "#c7bcc3", "#e7dce3", "#fff3fb", "#fffafd"] },
+      "coral": { "role": "secondary", "displayName": "Coral presença", "canonical": "#ff674d", "tonalRamp": ["#3d100a", "#6d1f15", "#a33424", "#d84b37", "#ff674d", "#ff917d", "#ffb9aa", "#ffe6df"] },
+      "lilac": { "role": "secondary", "displayName": "Lilás expressão", "canonical": "#b99aff", "tonalRamp": ["#21163f", "#3e2b70", "#6046a5", "#8669dc", "#b99aff", "#cdb8ff", "#e2d7ff", "#f5f0ff"] },
+      "lime": { "role": "tertiary", "displayName": "Lima ação", "canonical": "#d9f36b", "tonalRamp": ["#273009", "#4a5815", "#708324", "#9bb035", "#c5dc4f", "#d9f36b", "#e9fa9f", "#f8ffd9"] },
+      "ink": { "role": "neutral", "displayName": "Tinta", "canonical": "#24101f", "tonalRamp": ["#160812", "#24101f", "#42233a", "#633a59", "#865a78", "#aa829d", "#d0b4c8", "#f5eaf2"] },
+      "white": { "role": "neutral", "displayName": "Branco", "canonical": "#fffdf9", "tonalRamp": ["#292825", "#4e4c48", "#75736e", "#9e9b95", "#c7c4be", "#e7e4de", "#fffdf9", "#ffffff"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display condensada", "purpose": "Títulos curtos e palavras editoriais em grande escala." },
+      "body": { "displayName": "Corpo", "purpose": "Narrativa, explicações e mensagens de ação." },
+      "label": { "displayName": "Rótulo", "purpose": "Navegação e metadados curtos." }
+    },
+    "shadows": [
+      { "name": "swatch-depth", "value": "15px 20px 40px rgba(20,0,14,.18)", "purpose": "Separar as lâminas articuladas do campo ameixa." },
+      { "name": "action-hover", "value": "0 8px 20px rgba(20,0,14,.2)", "purpose": "Feedback breve de elevação nos botões." }
+    ],
+    "motion": [
+      { "name": "physical-open", "value": "0.65s cubic-bezier(.16, 1, .3, 1)", "purpose": "Rotação das lâminas e movimento do mostruário." },
+      { "name": "state-fast", "value": "0.2s ease-out", "purpose": "Estados de botão, link e menu." }
+    ],
+    "breakpoints": [
+      { "name": "navigation-stack", "value": "820px" },
+      { "name": "compact", "value": "520px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Botão primário",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Ação principal em lima, reta e tátil.",
+      "html": "<button class=\"ds-button-primary\">Conheça a proposta</button>",
+      "css": ".ds-button-primary{min-height:3.35rem;padding:.9rem 1.35rem;border:1px solid currentColor;border-radius:0;background:#d9f36b;color:#22091d;font:700 1rem 'Archivo Local',Arial,sans-serif;cursor:pointer;transition:transform .2s ease-out,box-shadow .2s ease-out}.ds-button-primary:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(20,0,14,.2)}.ds-button-primary:focus-visible{outline:3px solid #d9f36b;outline-offset:5px}"
+    },
+    {
+      "name": "Botão escuro",
+      "kind": "button",
+      "refersTo": "button-dark",
+      "description": "Ação de contato em ameixa sobre campo lima.",
+      "html": "<button class=\"ds-button-dark\">Copiar mensagem</button>",
+      "css": ".ds-button-dark{min-height:3.35rem;padding:.9rem 1.35rem;border:1px solid currentColor;border-radius:0;background:#22091d;color:#fffdf9;font:700 1rem 'Archivo Local',Arial,sans-serif;cursor:pointer;transition:transform .2s ease-out,background .2s ease-out,color .2s ease-out}.ds-button-dark:hover{transform:translateY(-3px);background:#d9f36b;color:#22091d}.ds-button-dark:focus-visible{outline:3px solid #d9f36b;outline-offset:5px}"
+    },
+    {
+      "name": "Link editorial",
+      "kind": "nav",
+      "description": "Link textual com sublinhado afastado para ações secundárias.",
+      "html": "<a class=\"ds-text-link\" href=\"#\">Iniciar uma conversa →</a>",
+      "css": ".ds-text-link{color:#fffdf9;font:700 1rem 'Archivo Local',Arial,sans-serif;text-underline-offset:.28em;text-decoration-thickness:.08em}.ds-text-link:focus-visible{outline:3px solid #d9f36b;outline-offset:5px}"
+    },
+    {
+      "name": "Nota editorial",
+      "kind": "custom",
+      "description": "Bloco de contexto com regra fina e texto sem moldura de cartão.",
+      "html": "<aside class=\"ds-editor-note\"><strong>Texto-base para validação</strong><p>Conteúdo provisório e editável.</p></aside>",
+      "css": ".ds-editor-note{max-width:34rem;padding:1.3rem 0 0;border-top:1px solid #24101f;color:#24101f;font:400 1rem/1.55 'Archivo Local',Arial,sans-serif}.ds-editor-note strong{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase}.ds-editor-note p{margin:.8rem 0 0}"
+    },
+    {
+      "name": "Monograma circular",
+      "kind": "custom",
+      "description": "A única forma circular recorrente do sistema.",
+      "html": "<span class=\"ds-brand-mark\">A</span>",
+      "css": ".ds-brand-mark{display:grid;width:2.35rem;height:2.35rem;place-items:center;border:1px solid currentColor;border-radius:50%;color:#fffdf9;background:#37112f;font:400 1.35rem 'Anton Local','Arial Narrow',sans-serif}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Atlas Cromático Desdobrável",
+    "overview": "O sistema trata cor como estrutura: ameixa, coral, lilás e lima ocupam campos completos, como folhas de um mostruário físico sendo abertas. A voz visual é editorial, condensada e direta, com assimetria controlada e pouco ornamento.",
+    "keyCharacteristics": [
+      "Campos cromáticos inteiros em sequência, nunca uma coleção de pequenos acentos.",
+      "Titulares condensados em grande escala, com texto corrido sóbrio e legível.",
+      "Cantos retos, regras finas e formas circulares reservadas à marca e aos pinos do mostruário.",
+      "Movimento curto, físico e opcional; conteúdo permanece visível sem animação."
+    ],
+    "rules": [
+      { "name": "The Full-Field Color Rule", "body": "Uma cor de destaque deve possuir uma região inteira ou uma função nítida; não salpicar acentos sem hierarquia.", "section": "colors" },
+      { "name": "The Condensed Voice Rule", "body": "A fonte display fala em frases breves e grandes; parágrafos nunca usam a voz condensada.", "section": "typography" }
+    ],
+    "dos": [
+      "Do use campos cromáticos grandes para criar ritmo entre densidade e pausa.",
+      "Do preserve contraste forte, cantos retos e hierarquia tipográfica evidente.",
+      "Do reorganize composições no mobile em vez de apenas reduzi-las.",
+      "Do mantenha todo conteúdo essencial disponível sem movimento ou JavaScript."
+    ],
+    "donts": [
+      "Don't use gradientes, vidro, halos ou sombras sem deslocamento.",
+      "Don't transforme o sistema em uma grade de cartões uniformes.",
+      "Don't use a fonte display em texto corrido.",
+      "Don't introduza imagens de produto, claims ou prova comercial sem conteúdo aprovado."
+    ]
+  }
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Conceito institucional editável para Amada Cosméticos.">
+  <meta name="theme-color" content="#37112f">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <title>Amada Cosméticos — Conceito institucional</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="#inicio" aria-label="Amada Cosméticos — início">
+      <span class="brand-mark" aria-hidden="true">A</span>
+      <span>Amada <small>cosméticos</small></span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+      <span class="menu-label">Menu</span>
+      <span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
+    </button>
+
+    <nav class="site-nav" id="menu-principal" aria-label="Navegação principal">
+      <a href="#essencia">Essência</a>
+      <a href="#linguagem">Linguagem</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title">Beleza é uma forma de <em>presença.</em></h1>
+        <p class="hero-lede">Uma primeira direção de marca para apresentar a Amada com clareza, personalidade e espaço para evoluir junto com Lúcia.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#essencia">Conheça a proposta</a>
+          <a class="text-link" href="#contato">Iniciar uma conversa <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+
+      <div class="swatch-stage" aria-hidden="true">
+        <div class="swatch swatch-lilac"><span>expressão</span></div>
+        <div class="swatch swatch-coral"><span>presença</span></div>
+        <div class="swatch swatch-lime"><span>cuidado</span></div>
+        <div class="swatch-pin"></div>
+      </div>
+
+      <p class="hero-index" aria-hidden="true">AMADA / PRIMEIRA DIREÇÃO</p>
+    </section>
+
+    <section class="intro" id="essencia" aria-labelledby="essencia-title">
+      <div class="section-heading">
+        <h2 id="essencia-title">Uma marca em construção, com intenção desde o início.</h2>
+        <p>Esta página apresenta uma direção inicial de voz e presença para Amada Cosméticos. Os textos são pontos de partida, pensados para serem revistos quando a história, os produtos e os diferenciais da marca forem definidos com Lúcia.</p>
+      </div>
+      <aside class="editor-note" aria-label="Nota sobre o conteúdo">
+        <strong>Texto-base para validação</strong>
+        <p>Nada aqui substitui as informações oficiais da marca. A proposta organiza um caminho visual e editorial para a próxima conversa.</p>
+      </aside>
+    </section>
+
+    <section class="principles" aria-label="Ideias centrais da proposta">
+      <article class="principle principle-plum">
+        <div class="principle-word" aria-hidden="true">P</div>
+        <div>
+          <h2>Presença</h2>
+          <p>Uma comunicação que pode ocupar espaço sem perder a clareza — direta no que diz e reconhecível na forma como se apresenta.</p>
+        </div>
+      </article>
+      <article class="principle principle-coral">
+        <div class="principle-word" aria-hidden="true">C</div>
+        <div>
+          <h2>Cuidado</h2>
+          <p>Uma voz atenta às escolhas de palavras, às informações que ainda faltam e ao compromisso de comunicar somente o que for verdadeiro.</p>
+        </div>
+      </article>
+      <article class="principle principle-lilac">
+        <div class="principle-word" aria-hidden="true">E</div>
+        <div>
+          <h2>Expressão</h2>
+          <p>Uma identidade aberta a novas cores, histórias e conteúdos, capaz de acompanhar a Amada à medida que a marca ganha forma.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="language" id="linguagem" aria-labelledby="linguagem-title">
+      <div class="language-title-wrap">
+        <h2 id="linguagem-title">Palavras abertas à edição.</h2>
+        <p>Em vez de antecipar promessas, a proposta começa pelo tom. Cada palavra abaixo funciona como direção de conversa, não como alegação sobre produtos.</p>
+      </div>
+      <ul class="word-field">
+        <li>próxima</li>
+        <li>viva</li>
+        <li>clara</li>
+        <li>singular</li>
+      </ul>
+      <p class="language-caption">Direção inicial — sujeita à validação e aos conteúdos oficiais de Amada Cosméticos.</p>
+    </section>
+
+    <section class="contact" id="contato" aria-labelledby="contato-title">
+      <div>
+        <h2 id="contato-title">Vamos construir o próximo capítulo.</h2>
+        <p>Se esta direção abre uma boa conversa, copie a mensagem abaixo e envie para Lúcia pelo canal que você já utiliza. Nenhum dado é coletado por este site.</p>
+      </div>
+      <div class="contact-action">
+        <p id="message-text">Olá, Lúcia. Vi o conceito institucional da Amada Cosméticos e gostaria de conversar sobre os próximos passos.</p>
+        <button class="button button-dark" type="button" id="copy-message" aria-describedby="copy-status">Copiar mensagem</button>
+        <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand brand-footer" href="#inicio" aria-label="Voltar ao início">
+      <span class="brand-mark" aria-hidden="true">A</span>
+      <span>Amada <small>cosméticos</small></span>
+    </a>
+    <p>Conceito institucional · Conteúdo provisório para apresentação</p>
+    <a href="#inicio">Voltar ao topo <span aria-hidden="true">↑</span></a>
+  </footer>
+</body>
+</html>
